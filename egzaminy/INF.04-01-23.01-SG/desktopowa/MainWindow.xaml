@@ -1,0 +1,119 @@
+﻿<Window x:Class="_2023_styczen_01_desktopowa.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_2023_styczen_01_desktopowa"
+        mc:Ignorable="d"
+        Title="Dodaj pracownika" 
+        Height="350"
+        MinHeight="350"
+        MaxHeight="350"
+        Width="740"
+        MinWidth="740"
+        MaxWidth="740"
+        Background="LightSteelBlue">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+        </Grid.RowDefinitions>
+
+        <DockPanel Grid.Row="0"
+                   LastChildFill="False">
+            
+            <GroupBox Header="Dane pracownika"
+                      DockPanel.Dock="Left"
+                      Margin="35, 35, 20, 35"
+                      Width="300"
+                      BorderThickness="2">
+                
+                <StackPanel Orientation="Vertical"
+                            Margin="20">
+                    
+                    <DockPanel LastChildFill="False"
+                               Margin="0, 0, 0, 10">
+                        <Label Content="Imię"
+                               DockPanel.Dock="Left" />
+                        
+                        <TextBox DockPanel.Dock="Right"
+                                 Width="150"
+                                 x:Name="firstNameTextBox" />
+                    </DockPanel>
+
+                    <DockPanel LastChildFill="False"
+                               Margin="0, 0, 0, 10">
+                        <Label Content="Nazwisko"
+                               DockPanel.Dock="Left" />
+                                
+                        <TextBox DockPanel.Dock="Right"
+                                 Width="150" 
+                                 x:Name="lastNameTextBox" />
+                    </DockPanel>
+
+                    <DockPanel LastChildFill="False">
+                        <Label Content="Stanowisko"
+                               DockPanel.Dock="Left" />
+
+                        <ComboBox DockPanel.Dock="Right"
+                                  Width="150"
+                                  x:Name="positionComboBox">
+                            <ComboBoxItem Content="Kierownik" />
+                            <ComboBoxItem Content="Starszy programista" />
+                            <ComboBoxItem Content="Młodszy programista" />
+                            <ComboBoxItem Content="Tester" />
+                        </ComboBox>
+                        
+                    </DockPanel>
+                </StackPanel>
+            </GroupBox>
+
+            <GroupBox Header="Generowanie hasła"
+                      DockPanel.Dock="Right"
+                      Margin="20, 35, 35, 35"
+                      Width="300"
+                      BorderThickness="2">
+
+                <StackPanel Orientation="Vertical"
+                            Margin="20">
+
+                    <DockPanel LastChildFill="False"
+                               Margin="0, 0, 0, 10">
+                        <Label Content="Ile znaków?"
+                               DockPanel.Dock="Left" />
+                        
+                        <TextBox DockPanel.Dock="Right"
+                                 Width="150"
+                                 x:Name="charactersCountTextBox" />
+                    </DockPanel>
+
+                    <CheckBox Content="Małe i wielkie litery"
+                              Margin="0, 0, 0, 10"
+                              x:Name="uppercaseLettersCheckbox" />
+                    
+                    <CheckBox Content="Cyfry" 
+                              Margin="0, 0, 0, 10"
+                              x:Name="integersCheckbox" />
+                    
+                    <CheckBox Content="Znaki specjalne"
+                              x:Name="specialCharactersCheckbox" />
+
+                    <Button Content="Generuj hasło"
+                            Background="SteelBlue"
+                            Foreground="White"
+                            Margin="0, 15, 0, 0"
+                            Width="100"
+                            Click="GeneratePasswordButtonClick" />
+                </StackPanel>
+            </GroupBox>
+        </DockPanel>
+
+        <Button Grid.Row="1"
+                Width="250"
+                Height="20"
+                Content="Zatwierdź"
+                Background="SteelBlue"
+                Foreground="White"
+                Click="ConfirmButtonClick" />
+    </Grid>
+</Window>
