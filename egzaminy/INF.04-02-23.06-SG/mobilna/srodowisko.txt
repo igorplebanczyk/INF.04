@@ -1,0 +1,2 @@
+Środowisko programistyczne: Android Studio
+Emulator: Pixel 3a API 34
