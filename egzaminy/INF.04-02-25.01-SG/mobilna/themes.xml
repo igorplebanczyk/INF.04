@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme._2025styczen02mobilna" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/royal_blue</item> -->
+    </style>
+
+    <style name="Theme._2025styczen02mobilna" parent="Base.Theme._2025styczen02mobilna" />
+</resources>
