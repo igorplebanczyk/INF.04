@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme._2026styczen01mobilna" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#ED275021</item> -->
+    </style>
+
+    <style name="Theme._2026styczen01mobilna" parent="Base.Theme._2026styczen01mobilna" />
+</resources>
