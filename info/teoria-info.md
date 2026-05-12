@@ -110,3 +110,16 @@ Norma to dokument zatwierdzony przez uprawnioną jednostkę, zawierający zasady
 | Polska wdrażająca EN | PN-EN | PN-EN 60204 | Polska wersja normy europejskiej |
 | Polska wdrażająca ISO | PN-ISO | PN-ISO 14001 | Polska wersja normy ISO |
 
+## Choroba zawodowa
+
+Choroba zawodowa to stan zdrowotny spowodowany warunkami pracy lub czynnikami związanymi z wykonywaną profesją. Pracodawcy są zobowiązani do monitorowania warunków pracy i wdrażania rozwiązań minimalizujących ryzyko wystąpienia chorób zawodowych. Choroby na które narażeni są programiści:
+
+- zespół cieśni nadgarstka
+- bóle kręgosłupa
+- wady wzroku
+
+## Struktury danych
+
+### Stos i kolejka
+
+![Stos i kolejka](assets/stos--kolejka.png)
