@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme._2022_06_01_m" parent="Theme.Material3.DayNight.NoActionBar">
+    <item name="colorPrimary">@color/teal</item> -->
+    </style>
+
+    <style name="Theme._2022_06_01_m" parent="Base.Theme._2022_06_01_m" />
+</resources>
